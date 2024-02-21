@@ -1,0 +1,11 @@
+declare module '*.png' {
+    const value: any;
+    export = value;
+  }
+  
+  // custom.d.ts
+declare module '*.module.css' {
+    const classes: { [key: string]: string };
+    export default classes;
+  }
+  
