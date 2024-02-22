@@ -8,9 +8,8 @@ import LoadAutomationPage from './pages/LoadAutomation/LoadAutomationPage';
 import FileMappingPage from './pages/FileMapping/FileMappingPage';
 import DatasetPage from './pages/Dataset/DatasetPage';
 import UserPage from './pages/User/UserPage';
-// import logo from './assets/nimbusLogo.png';
-import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import './App.css';
 
 const App: React.FC = () => {
     return (
