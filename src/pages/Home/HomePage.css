@@ -1,0 +1,31 @@
+@import './../../styles/variables.css';
+
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 6em;
+}
+
+.homepage-container .ui.header, 
+.homepage-container .sub.header {
+    margin: 1em 3em;
+    color: var(--lightTheme) !important;
+}
+
+.homepage-container .header-icon {
+    color: var(--primaryColor)
+}
+
+.homepage-card-container {
+    width: 100%;
+    padding: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px;  */
+    padding: 20px; 
+}
+
+.homepage-card-container .ui.card {
+    margin: .5em;
+}
