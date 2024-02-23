@@ -1,3 +1,6 @@
 :root {
     --primaryColor: #28a745;
+    --primaryDarker: #218838;
+    --lightTheme: #fff;
+    --darkTheme: #333;
 }
