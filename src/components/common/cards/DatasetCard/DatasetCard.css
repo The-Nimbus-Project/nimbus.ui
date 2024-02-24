@@ -1,0 +1,3 @@
+.dataset-card-image {
+    filter: invert(0) hue-rotate(300deg) brightness(1);
+}

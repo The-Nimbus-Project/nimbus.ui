@@ -1,0 +1,3 @@
+.load-automation-card-image {
+    filter: invert(0) hue-rotate(180deg) brightness(1);
+}
