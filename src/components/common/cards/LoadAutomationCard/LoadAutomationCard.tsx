@@ -1,27 +1,29 @@
 import React from 'react';
 import { Image, Card, CardContent, CardHeader, CardMeta, CardDescription } from 'semantic-ui-react';
-import { IDataset } from '../../../../models/Dataset';
+import { ILoadAutomation } from '../../../../models/LoadAutomation';
 import logo from '../../../../assets/nimbusLogo.png';
-import './DatasetCard.css';
+import './LoadAutomationCard.css';
 
-interface IDatasetCardProps {
-    item: IDataset;
+interface ILoadAutomationCardProps {
+    item: ILoadAutomation;
 }
 
-export const DatasetCard: React.FC<IDatasetCardProps> = ({ item }) => {
+export const LoadAutomationCard: React.FC<ILoadAutomationCardProps> = ({ item }) => {
     return (
         <Card>
-            <Image className='dataset-card-image' src={logo} wrapped ui={false} />
+            <Image className='load-automation-card-image' src={logo} wrapped ui={false} />
             <CardContent>
                 <CardHeader>{item.name}</CardHeader>
+                <CardMeta>
+                    <span className='date'>Last load date: {item.lastLoadDate.toLocaleDateString()}</span>
+                </CardMeta>
                 <CardMeta>
                     <span className='date'>Last access: {item.lastAccess.toLocaleDateString()}</span>
                 </CardMeta>
                 <CardDescription>
-                    {item.totalRecords} Total Records
+                    {item.totalLoads} Total Loads
                 </CardDescription>
             </CardContent>
         </Card>
     );
 };
-
